@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.App {
+  text-align: center;
+  height:100vh;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.Room{
+  height:100vh
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  #transform-tagline
+  {
+    opacity: 0;
+    animation: entrance-fade-in 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+  }
+
+  #tldexpresslogo
+  {
+    animation: entrance-fade-in 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+    animation-fill-mode: forwards;
+  }
+
+  #get-started
+  {
+    opacity: 0;
+    animation: entrance-fade-in 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+    animation-delay: 1.0s;
+    animation-fill-mode: forwards;
+  }
+
+  #main-container-selection
+  {
+    animation: entrance-fade-in 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+    animation-fill-mode: forwards;
+  }
+
+  #hide-landing
+  {
+    animation: entrance-fade-out 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+    animation-fill-mode: forwards;
+  }
+
+  #delete-button
+  {
+    opacity: 0;
+    animation: entrance-fade-in 0.3s cubic-bezier(0.86, 0, 0.07, 1);
+    animation-fill-mode: forwards;
+  }
+
+
+  #CatalogContainer
+  {
+    opacity: 0;
+    animation: entrance-fade-in-from-left 0.3s cubic-bezier(0.86, 0, 0.07, 1);
+    animation-fill-mode: forwards;
+  }
+
+  #room-identification
+  {
+    opacity: 0;
+    animation: entrance-fade-in 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+
+    animation-fill-mode: forwards;
+  }
+
+}
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+
+@keyframes entrance-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes entrance-fade-in-from-left {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes entrance-fade-out {
+  from {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
